@@ -1,0 +1,3407 @@
+ML ^{
+    EquipmentShop ^{
+        Border=0,0,1024,768
+        Panel ^{
+            Image ^{
+                Active=True
+                Name=BGCity2
+                Pos=0,0,11
+                Size=1024,768
+            }
+            Image ^{
+                Active=True
+                Name=BGCity
+                Pos=0,0,10
+                Size=1024,768
+            }
+            Image ^{
+                Active=True
+                Auto=Pos,Size
+                Image=GI,Bm.FormHangar2.2EquipmentBackground
+                Name=EquipmentBackground
+                Pos=0,0,9
+                Size=1280,720
+            }
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                    Active=False
+                    MVUpdate=True
+                    MouseBlocking=True
+                    Name=PM_PanelMsg
+                    Pos=111,741,2
+                    Size=362,26
+                }
+                Panel ^{
+                    GraphButton ^{
+                        Help=Help.ButShip
+                        ImageDisable=GI,Bm.PanelMain2.2ShipH
+                        ImageDown=GI,Bm.PanelMain2.2ShipD
+                        ImageNormal=GI,Bm.PanelMain2.2ShipN
+                        ImageNormalA=GI,Bm.PanelMain2.2ShipA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Ship
+                        Pos=755,9,8
+                        Size=46,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Help=Help.ButGalaxy
+                        ImageDisable=GI,Bm.PanelMain2.2GalH
+                        ImageDown=GI,Bm.PanelMain2.2GalD
+                        ImageNormal=GI,Bm.PanelMain2.2GalN
+                        ImageNormalA=GI,Bm.PanelMain2.2GalA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Gal
+                        Pos=843,9,8
+                        Size=49,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Help=Help.ButRating
+                        ImageDisable=GI,Bm.PanelMain2.2RatingH
+                        ImageDown=GI,Bm.PanelMain2.2RatingD
+                        ImageNormal=GI,Bm.PanelMain2.2RatingN
+                        ImageNormalA=GI,Bm.PanelMain2.2RatingA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Quest
+                        Pos=799,9,8
+                        Size=47,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Auto=Pos,Size
+                        Help=Help.ButTurn
+                        ImageDisable=GI,Bm.PanelMain2.2TurnD
+                        ImageDown=GI,Bm.PanelMain2.2TurnD
+                        ImageNormal=GI,Bm.PanelMain2.2TurnN
+                        ImageNormalA=GI,Bm.PanelMain2.2TurnA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_EndTurn
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Active=True
+                        Auto=Pos,Size
+                        Help=Help.ButBreakMove
+                        ImageDisable=GI,Bm.PanelMain2.2StopD
+                        ImageDown=GI,Bm.PanelMain2.2StopD
+                        ImageNormal=GI,Bm.PanelMain2.2StopN
+                        ImageNormalA=GI,Bm.PanelMain2.2StopA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_Break
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Auto=Pos,Size
+                        Help=Help.ButLogo
+                        ImageDisable=GI,Bm.PanelMain2.2MenuN
+                        ImageDown=GI,Bm.PanelMain2.2MenuD
+                        ImageNormal=GI,Bm.PanelMain2.2MenuN
+                        ImageNormalA=GI,Bm.PanelMain2.2MenuA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Logo
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Auto=Pos,Size
+                        Image=GI,Bm.PanelMain2.2BG
+                        Name=PM_ImageBG
+                        PosZ=9
+                    }
+                    Image ^{
+                        Image=GI,Bm.PanelMain2.2WarningSpace
+                        Name=PM_WarningSpace
+                        Pos=498,53,8
+                        Size=89,24
+                    }
+                    Image ^{
+                        Image=GI,Bm.PanelMain2.2WarningMoney
+                        Name=PM_WarningMoney
+                        Pos=622,53,8
+                        Size=98,24
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelMoney
+                        Name=PM_Money
+                        Pos=624,55,7
+                        Size=95,22
+                        TextColor=200,240,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelFreeSpace
+                        Name=PM_FreeSpace
+                        Pos=507,55,7
+                        Size=70,22
+                        TextColor=200,240,255
+                    }
+                    Label ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Name=PM_Help
+                        Pos=100,55,8
+                        Size=360,22
+                        TextColor=200,240,255
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.PanelMain2.2DateNext
+                            Name=PM_DateNextImage
+                            Pos=0,5,8
+                            Size=7,17
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_Date
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_DateNew
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Name=PM_PanelDate
+                        Pos=738,55,7
+                        Size=130,22
+                    }
+                    Pos=0,686,3
+                    Size=1024,82
+                }
+                Pos=0,0,1
+                Size=1024,768
+                Window ^{
+                    Active=False
+                    Label ^{
+                        Active=True
+                        AlignX=Auto
+                        AlignY=Auto
+                        Font=Font.2Normal
+                        Name=PM_LabelMsg
+                        Pos=0,0,1
+                        Size=500,20
+                        TextColor=255,255,230
+                        WordWrap=True
+                    }
+                    Name=PM_WinMsg
+                    Pos=57,725,1
+                    Size=500,20
+                    Style=Style.Window.2Tips
+                }
+            }
+            Panel ^{
+                GraphButton ^{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Shop
+                    Pos=155,2,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGov
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Gov
+                    Pos=67,2,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Goods
+                    Pos=111,2,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Hangar
+                    Pos=243,2,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Info
+                    Pos=199,2,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=0,0,10
+                    Size=297,43
+                }
+                Name=PanelPlanet
+                Pos=441,693,1
+                Size=297,43
+            }
+            Panel ^{
+                GraphButton ^{
+                    Help=Help.ButCaptain
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Gov
+                    Pos=508,695,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Shop
+                    Pos=596,695,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Goods
+                    Pos=552,695,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Info
+                    Pos=640,695,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Hangar
+                    Pos=684,695,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=441,693,10
+                    Size=297,43
+                }
+                Name=PanelRuins
+                Pos=0,0,2
+                Size=1024,768
+            }
+            Panel ^{
+                GAI ^{
+                    FrameLoad=0
+                    Image=Bm.FormLoad2.LoadAnim
+                    Name=LoadAnim
+                    Pos=262,504,8
+                    Size=543,241
+                }
+                Image ^{
+                    Active=True
+                    KindX=Center
+                    KindY=Center
+                    Name=BGImage
+                    Pos=0,-229,10
+                    Size=1024,910
+                }
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.ShipPanel
+                    KindX=Center
+                    KindY=Center
+                    Name=ShipPanelImage
+                    Pos=0,0,9
+                    Size=1024,768
+                }
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.LoadAnimText
+                    Name=LoadAnimText
+                    Pos=262,504,7
+                    Size=543,241
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=PLProgress
+                    Pos=497,644,6
+                    Size=75,17
+                    TextColor=255,255,255
+                    TextShadow=1
+                    TextShadowColor=0,0,0
+                }
+                MVUpdate=True
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarLeft
+                        Name=PLB1
+                        Pos=0,0
+                        Size=31,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB2
+                        Pos=20,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB3
+                        Pos=38,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB4
+                        Pos=56,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB5
+                        Pos=74,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB6
+                        Pos=92,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB7
+                        Pos=110,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB8
+                        Pos=128,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB9
+                        Pos=146,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB10
+                        Pos=164,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB11
+                        Pos=182,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB12
+                        Pos=200,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB13
+                        Pos=218,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB14
+                        Pos=236,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB15
+                        Pos=254,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB16
+                        Pos=272,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarRight
+                        Name=PLB17
+                        Pos=290,0
+                        Size=31,37
+                    }
+                    Name=PLBar
+                    Pos=351,720,8
+                    Size=321,37
+                }
+                Pos=0,0,-1000
+                Size=1024,768
+            }
+            Panel ^{
+                GraphButton ^{
+                    ImageDisable=GI,Bm.FormShop2.2LeftH
+                    ImageDown=GI,Bm.FormShop2.2LeftD
+                    ImageNormal=GI,Bm.FormShop2.2LeftN
+                    ImageNormalA=GI,Bm.FormShop2.2LeftA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=Left
+                    Pos=15,175,8
+                    Size=39,70
+                }
+                GraphButton ^{
+                    ImageDisable=GI,Bm.FormShop2.2RightH
+                    ImageDown=GI,Bm.FormShop2.2RightD
+                    ImageNormal=GI,Bm.FormShop2.2RightN
+                    ImageNormalA=GI,Bm.FormShop2.2RightA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=Right
+                    Pos=713,175,8
+                    Size=39,70
+                }
+                GraphButton ^{
+                    ImageDown=GI,Bm.FormShop2.2CloseD
+                    ImageNormal=GI,Bm.FormShop2.2CloseN
+                    ImageNormalA=GI,Bm.FormShop2.2CloseA
+                    Kind=Normal
+                    KindHit=Rect
+                    Name=ButFormClose
+                    Pos=700,301,8
+                    Size=44,70
+                }
+                Image ^{
+                    Image=GI,Bm.FormShop2.2bg
+                    Name=PanelImage
+                    Pos=0,0,10
+                    Size=767,410
+                }
+                Image ^{
+                    Name=BGImageRace
+                    Pos=78,333,9
+                    Size=605,56
+                }
+                Name=PanelShop
+                PanelScrollBar ^{
+                    ActiveBarX=False
+                    ActiveBarY=False
+                    MoveWorld=True
+                    Name=PanelGoods
+                    Pos=89,48,7
+                    Size=594,328
+                    UnlimitedWorld=False
+                }
+                Pos=125,166,6
+                Size=767,410
+            }
+            Pos=0,0
+            Size=1024,768
+            Window ^{
+                Active=False
+                Image ^{
+                    Name=EmRace
+                    Pos=195,118,8
+                    Size=35,35
+                }
+                Image ^{
+                    Name=InfoImage
+                    Pos=12,10,0
+                    Size=43,43
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=InfoName
+                    Pos=60,13,8
+                    Size=165,40
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=InfoText
+                    Pos=10,60,8
+                    Size=240,83
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoSize
+                    Pos=49,118,8
+                    Size=45,33
+                    TextColor=255,255,255
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoPrice
+                    Pos=117,118,8
+                    Size=100,33
+                    TextColor=255,255,255
+                }
+                Name=PII
+                Panel ^{
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarLine
+                            Name=InfoDurable
+                            Pos=0,0
+                            Size=214,4
+                        }
+                        Pos=16,5,2
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarBack
+                            Name=InfoDurableBack
+                            Pos=0,0
+                            Size=210,4
+                        }
+                        Pos=16,5,3
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopLeft
+                            Name=InfoDurableLeft
+                            Pos=0,0
+                            Size=17,14
+                        }
+                        Pos=3,0,1
+                        Size=17,14
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopRight
+                            Name=InfoDurableRight
+                            Pos=0,0
+                            Size=227,14
+                        }
+                        Pos=50,0,1
+                        Size=84,14
+                    }
+                    Pos=60,2,11
+                    Size=84,14
+                }
+                Pos=50,20,-5
+                Size=243,155
+                Style=Style.Window.2Item
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Name=InfoHullEmRace
+                    Pos=340,125,8
+                    Size=35,35
+                }
+                Image ^{
+                    Name=InfoHullImage
+                    Pos=12,10,0
+                    Size=43,43
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=InfoHullName
+                    Pos=60,13,8
+                    Size=265,40
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=InfoHullText
+                    Pos=10,60,8
+                    Size=240,83
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoHullSize
+                    Pos=167,134,8
+                    Size=58,31
+                    TextColor=255,255,255
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoHullPrice
+                    Pos=237,134,8
+                    Size=100,31
+                    TextColor=255,255,255
+                }
+                Name=InfoHull
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_Bg
+                        Pos=0,0,9
+                        Size=80,90
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_Forsage
+                        Name=InfoHull_Forsage
+                        Pos=0,32
+                        Size=14,15
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_W1
+                        Name=InfoHull_W1
+                        Pos=16,19
+                        Size=16,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_W2
+                        Name=InfoHull_W2
+                        Pos=33,19
+                        Size=15,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_W3
+                        Name=InfoHull_W3
+                        Pos=48,19
+                        Size=18,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_W4
+                        Name=InfoHull_W4
+                        Pos=24,6
+                        Size=16,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_W5
+                        Name=InfoHull_W5
+                        Pos=41,6
+                        Size=15,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_A1
+                        Name=InfoHull_A1
+                        Pos=4,70
+                        Size=13,8
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_A2
+                        Name=InfoHull_A2
+                        Pos=65,70
+                        Size=11,8
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_A3
+                        Name=InfoHull_A3
+                        Pos=4,25
+                        Size=13,7
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_A4
+                        Name=InfoHull_A4
+                        Pos=64,25
+                        Size=12,7
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_Engine
+                        Name=InfoHull_Engine
+                        Pos=9,36
+                        Size=17,14
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_FuelTanks
+                        Name=InfoHull_FuelTanks
+                        Pos=9,52
+                        Size=17,14
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_Scaner
+                        Name=InfoHull_Scaner
+                        Pos=55,36
+                        Size=17,14
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_Radar
+                        Name=InfoHull_Radar
+                        Pos=55,52
+                        Size=17,14
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_RepairRobot
+                        Name=InfoHull_RepairRobot
+                        Pos=15,70
+                        Size=17,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_CargoHook
+                        Name=InfoHull_CargoHook
+                        Pos=33,70
+                        Size=15,13
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormNote.2HP_DefGenerator
+                        Name=InfoHull_DefGenerator
+                        Pos=48,70
+                        Size=18,13
+                    }
+                    Pos=22,68,7
+                    Size=80,90
+                }
+                Panel ^{
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarLine
+                            Name=InfoHullDurable
+                            Pos=0,0
+                            Size=213,4
+                        }
+                        Pos=16,5,2
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarBack
+                            Name=InfoHullDurableBack
+                            Pos=0,0
+                            Size=210,4
+                        }
+                        Pos=16,5,3
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopLeft
+                            Name=InfoHullDurableLeft
+                            Pos=0,0
+                            Size=17,14
+                        }
+                        Pos=3,0,1
+                        Size=17,14
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopRight
+                            Name=InfoHullDurableRight
+                            Pos=0,0
+                            Size=227,14
+                        }
+                        Pos=50,0,1
+                        Size=84,14
+                    }
+                    Pos=60,2,11
+                    Size=84,14
+                }
+                Pos=50,20,-5
+                Size=383,168
+                Style=Style.Window.2Hull
+            }
+        }
+        Sound ^{
+            Group ^{
+                1=Sound.FormShop0
+                1=Sound.FormShop1
+                1=Sound.FormShop2
+                1=Sound.FormShop3
+                1=Sound.FormShop4
+                1=Sound.FormShop5
+                1=Sound.FormShop6
+                1=Sound.FormShop7
+                1=Sound.FormShop8
+                1=Sound.FormShop9
+                1=Sound.FormShop10
+                1=Sound.FormShop12
+                NextTime=5000-10000
+            }
+            Group ^{
+                1=Sound.FormShop0
+                1=Sound.FormShop1
+                1=Sound.FormShop2
+                1=Sound.FormShop3
+                1=Sound.FormShop4
+                1=Sound.FormShop5
+                1=Sound.FormShop6
+                1=Sound.FormShop7
+                1=Sound.FormShop8
+                1=Sound.FormShop9
+                1=Sound.FormShop10
+                1=Sound.FormShop12
+                NextTime=7000-16000
+            }
+        }
+    }
+    GoodsShop ^{
+        Border=0,0,1024,768
+        Panel ^{
+            Auto=Pos,Size
+            GraphBuf ~{
+                Name=BGBuf
+                Pos=0,0,99
+                Size=1024,768
+            }
+            Image ~{
+                Active=True
+                Name=BGCity2
+                Pos=0,0,12
+                Size=1024,768
+            }
+            Image ~{
+                Active=True
+                Name=BGCity
+                Pos=0,0,11
+                Size=1024,768
+            }
+            Image ~{
+                Image=GI,Bm.PanelMain2.2WarningSpace
+                Name=ADD_WarningSpace
+                Pos=498,739,98
+                Size=89,24
+            }
+            Image ~{
+                Image=GI,Bm.PanelMain2.2WarningMoney
+                Name=ADD_WarningMoney
+                Pos=622,739,98
+                Size=98,24
+            }
+            Image ^{
+                Active=True
+                Auto=Pos,Size
+                Image=GI,Bm.FormHangar2.2MarketBackground
+                Name=MarketBackground
+                Pos=0,0,10
+                Size=1280,720
+            }
+            Label ~{
+                AlignX=Center
+                AlignY=CenterEx
+                Font=Font.2Ranger
+                Help=Help.LabelFreeSpace
+                Name=ADD_Space
+                Pos=507,739,97
+                Size=70,22
+                TextColor=55,230,255
+            }
+            Label ~{
+                AlignX=Center
+                AlignY=CenterEx
+                Font=Font.2Ranger
+                Help=Help.LabelMoney
+                Name=ADD_Money
+                Pos=624,739,97
+                Size=95,22
+                TextColor=55,230,255
+            }
+            Label ~{
+                Active=False
+                AlignX=Center
+                AlignY=CenterEx
+                Font=Font.2SmallBold
+                Name=GS_Help
+                Pos=100,741,8
+                Size=360,22
+                TextColor=200,240,255
+            }
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ~{
+                    Active=False
+                    MouseBlocking=True
+                    MVUpdate=True
+                    Name=PM_PanelMsg
+                    Pos=111,741,2
+                    Size=362,26
+                }
+                Panel ^{
+                    GraphButton ~{
+                        Help=Help.ButShip
+                        ImageDisable=GI,Bm.PanelMain2.2ShipH
+                        ImageDown=GI,Bm.PanelMain2.2ShipD
+                        ImageNormal=GI,Bm.PanelMain2.2ShipN
+                        ImageNormalA=GI,Bm.PanelMain2.2ShipA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Ship
+                        Pos=755,9,8
+                        Size=46,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ~{
+                        Help=Help.ButGalaxy
+                        ImageDisable=GI,Bm.PanelMain2.2GalH
+                        ImageDown=GI,Bm.PanelMain2.2GalD
+                        ImageNormal=GI,Bm.PanelMain2.2GalN
+                        ImageNormalA=GI,Bm.PanelMain2.2GalA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Gal
+                        Pos=843,9,8
+                        Size=49,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ~{
+                        Help=Help.ButRating
+                        ImageDisable=GI,Bm.PanelMain2.2RatingH
+                        ImageDown=GI,Bm.PanelMain2.2RatingD
+                        ImageNormal=GI,Bm.PanelMain2.2RatingN
+                        ImageNormalA=GI,Bm.PanelMain2.2RatingA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Quest
+                        Pos=799,9,8
+                        Size=47,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ~{
+                        Auto=Pos,Size
+                        Help=Help.ButTurn
+                        ImageDisable=GI,Bm.PanelMain2.2TurnD
+                        ImageDown=GI,Bm.PanelMain2.2TurnD
+                        ImageNormal=GI,Bm.PanelMain2.2TurnN
+                        ImageNormalA=GI,Bm.PanelMain2.2TurnA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_EndTurn
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ~{
+                        Active=True
+                        Auto=Pos,Size
+                        Help=Help.ButBreakMove
+                        ImageDisable=GI,Bm.PanelMain2.2StopD
+                        ImageDown=GI,Bm.PanelMain2.2StopD
+                        ImageNormal=GI,Bm.PanelMain2.2StopN
+                        ImageNormalA=GI,Bm.PanelMain2.2StopA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_Break
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ~{
+                        Auto=Pos,Size
+                        Help=Help.ButLogo
+                        ImageDisable=GI,Bm.PanelMain2.2MenuN
+                        ImageDown=GI,Bm.PanelMain2.2MenuD
+                        ImageNormal=GI,Bm.PanelMain2.2MenuN
+                        ImageNormalA=GI,Bm.PanelMain2.2MenuA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Logo
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ~{
+                        Auto=Pos,Size
+                        Image=GI,Bm.PanelMain2.2BG
+                        Name=PM_ImageBG
+                        PosZ=9
+                    }
+                    Image ~{
+                        Image=GI,Bm.PanelMain2.2WarningSpace
+                        Name=PM_WarningSpace
+                        Pos=498,53,8
+                        Size=89,24
+                    }
+                    Image ~{
+                        Image=GI,Bm.PanelMain2.2WarningMoney
+                        Name=PM_WarningMoney
+                        Pos=622,53,8
+                        Size=98,24
+                    }
+                    Label ~{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelMoney
+                        Name=PM_Money
+                        Pos=624,55,7
+                        Size=95,22
+                        TextColor=200,240,255
+                    }
+                    Label ~{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelFreeSpace
+                        Name=PM_FreeSpace
+                        Pos=507,55,7
+                        Size=70,22
+                        TextColor=200,240,255
+                    }
+                    Label ~{
+                        Active=False
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Name=PM_Help
+                        Pos=100,55,8
+                        Size=360,22
+                        TextColor=200,240,255
+                    }
+                    Panel ^{
+                        Image ~{
+                            Image=GI,Bm.PanelMain2.2DateNext
+                            Name=PM_DateNextImage
+                            Pos=0,5,8
+                            Size=7,17
+                        }
+                        Label ~{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_Date
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Label ~{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_DateNew
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Name=PM_PanelDate
+                        Pos=738,55,7
+                        Size=130,22
+                    }
+                    Pos=0,686,3
+                    Size=1024,82
+                }
+                Pos=0,0,1
+                Size=1024,768
+                Window ^{
+                    Active=False
+                    Label ~{
+                        Active=True
+                        AlignX=Auto
+                        AlignY=Auto
+                        Font=Font.2Normal
+                        Name=PM_LabelMsg
+                        Pos=0,0,1
+                        Size=500,20
+                        TextColor=255,255,230
+                        WordWrap=True
+                    }
+                    Name=PM_WinMsg
+                    Pos=57,725,1
+                    Size=500,20
+                    Style=Style.Window.2Tips
+                }
+            }
+            Panel ^{
+                GraphButton ~{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Shop
+                    Pos=155,2,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButGov
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Gov
+                    Pos=67,2,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Goods
+                    Pos=111,2,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Hangar
+                    Pos=243,2,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Info
+                    Pos=199,2,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ~{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=0,0,10
+                    Size=297,43
+                }
+                Name=PanelPlanet
+                Pos=441,693,1
+                Size=297,43
+            }
+            Panel ^{
+                GraphButton ~{
+                    Help=Help.ButCaptain
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Gov
+                    Pos=508,695,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Shop
+                    Pos=596,695,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Goods
+                    Pos=552,695,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Info
+                    Pos=640,695,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Hangar
+                    Pos=684,695,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ~{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=441,693,10
+                    Size=297,43
+                }
+                Name=PanelRuins
+                Pos=0,0,2
+                Size=1024,768
+            }
+            Panel ^{
+                GAI ~{
+                    FrameLoad=0
+                    Image=Bm.FormLoad2.LoadAnim
+                    Name=LoadAnim
+                    Pos=262,504,8
+                    Size=543,241
+                }
+                Image ~{
+                    Active=True
+                    KindX=Center
+                    KindY=Center
+                    Name=BGImage
+                    Pos=0,-229,10
+                    Size=1024,910
+                }
+                Image ~{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.ShipPanel
+                    KindX=Center
+                    KindY=Center
+                    Name=ShipPanelImage
+                    Pos=0,0,9
+                    Size=1024,768
+                }
+                Image ~{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.LoadAnimText
+                    Name=LoadAnimText
+                    Pos=262,504,7
+                    Size=543,241
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=PLProgress
+                    Pos=497,644,6
+                    Size=75,17
+                    TextColor=255,255,255
+                    TextShadow=1
+                    TextShadowColor=0,0,0
+                }
+                MVUpdate=True
+                Name=PanelLoad
+                Panel ^{
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarLeft
+                        Name=PLB1
+                        Pos=0,0
+                        Size=31,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB2
+                        Pos=20,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB3
+                        Pos=38,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB4
+                        Pos=56,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB5
+                        Pos=74,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB6
+                        Pos=92,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB7
+                        Pos=110,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB8
+                        Pos=128,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB9
+                        Pos=146,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB10
+                        Pos=164,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB11
+                        Pos=182,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB12
+                        Pos=200,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB13
+                        Pos=218,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB14
+                        Pos=236,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB15
+                        Pos=254,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB16
+                        Pos=272,0
+                        Size=29,37
+                    }
+                    Image ~{
+                        Image=GI,Bm.FormLoad2.2BarRight
+                        Name=PLB17
+                        Pos=290,0
+                        Size=31,37
+                    }
+                    Name=PLBar
+                    Pos=351,720,8
+                    Size=321,37
+                }
+                Pos=0,0,-1000
+                Size=1024,768
+            }
+            Panel ^{
+                GAI ~{
+                    KindX=Center
+                    KindY=Center
+                    Name=FaceA
+                    PBuf=True
+                    Pos=31,197,0
+                    Size=99,110
+                    TransColor=255,0,255
+                }
+                GAI ~{
+                    KindX=Center
+                    KindY=Center
+                    Name=CaptainA
+                    PBuf=True
+                    Pos=662,197,0
+                    Size=99,110
+                    TransColor=255,0,255
+                }
+                GraphBuf ~{
+                    Name=FaceGB
+                    Pos=31,197,-1
+                    Size=97,110
+                }
+                GraphBuf ~{
+                    Name=GraphBufFace
+                    Pos=62,101,4
+                    Size=52,52
+                    Sme=0,0
+                }
+                GraphBuf ~{
+                    Name=GraphBufCaptain
+                    Pos=674,101,4
+                    Size=52,52
+                    Sme=0,0
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov1N
+                    ImageDown=GI,Bm.FormGoods2.2Tov1N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov1N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov1A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov0
+                    Pos=164,93,7
+                    Size=207,45
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov2N
+                    ImageDown=GI,Bm.FormGoods2.2Tov2N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov2N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov2A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov1
+                    Pos=164,140,7
+                    Size=207,42
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov3N
+                    ImageDown=GI,Bm.FormGoods2.2Tov3N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov3N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov3A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov2
+                    Pos=164,186,7
+                    Size=207,40
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov4N
+                    ImageDown=GI,Bm.FormGoods2.2Tov4N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov4N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov4A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov3
+                    Pos=164,233,7
+                    Size=207,38
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov5N
+                    ImageDown=GI,Bm.FormGoods2.2Tov5N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov5N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov5A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov4
+                    Pos=164,277,7
+                    Size=207,41
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov6N
+                    ImageDown=GI,Bm.FormGoods2.2Tov6N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov6N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov6A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov5
+                    Pos=164,321,7
+                    Size=207,44
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov7N
+                    ImageDown=GI,Bm.FormGoods2.2Tov7N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov7N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov7A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov6
+                    Pos=164,365,7
+                    Size=207,46
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov8N
+                    ImageDown=GI,Bm.FormGoods2.2Tov8N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov8N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov8A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov7
+                    Pos=164,409,7
+                    Size=207,49
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov1N
+                    ImageDown=GI,Bm.FormGoods2.2Tov1N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov1N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov1A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov10
+                    Pos=418,93,7
+                    Size=207,45
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov2N
+                    ImageDown=GI,Bm.FormGoods2.2Tov2N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov2N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov2A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov11
+                    Pos=418,140,7
+                    Size=207,42
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov3N
+                    ImageDown=GI,Bm.FormGoods2.2Tov3N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov3N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov3A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov12
+                    Pos=418,186,7
+                    Size=207,40
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov4N
+                    ImageDown=GI,Bm.FormGoods2.2Tov4N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov4N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov4A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov13
+                    Pos=418,233,7
+                    Size=207,38
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov5N
+                    ImageDown=GI,Bm.FormGoods2.2Tov5N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov5N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov5A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov14
+                    Pos=418,277,7
+                    Size=207,41
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov6N
+                    ImageDown=GI,Bm.FormGoods2.2Tov6N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov6N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov6A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov15
+                    Pos=418,321,7
+                    Size=207,44
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov7N
+                    ImageDown=GI,Bm.FormGoods2.2Tov7N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov7N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov7A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov16
+                    Pos=418,365,7
+                    Size=207,46
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2Tov8N
+                    ImageDown=GI,Bm.FormGoods2.2Tov8N
+                    ImageNormal=GI,Bm.FormGoods2.2Tov8N
+                    ImageNormalA=GI,Bm.FormGoods2.2Tov8A
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=Tov17
+                    Pos=418,409,7
+                    Size=207,49
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDown=GI,Bm.FormGoods2.2CloseD
+                    ImageNormal=GI,Bm.FormGoods2.2CloseN
+                    ImageNormalA=GI,Bm.FormGoods2.2CloseA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=ButFormClose
+                    Pos=702,456,7
+                    Size=58,50
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ~{
+                    ImageDisable=GI,Bm.FormGoods2.2MemH
+                    ImageDown=GI,Bm.FormGoods2.2MemD
+                    ImageNormal=GI,Bm.FormGoods2.2MemN
+                    ImageNormalA=GI,Bm.FormGoods2.2MemA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=UserMsgAdd
+                    Pos=358,496,8
+                    Size=28,22
+                    Style=Style.GB.SoundNormal
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Image
+                    Pos=0,0,9
+                    Size=789,537
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2CloseLine
+                    Name=CloseLine
+                    Pos=37,379,8
+                    Size=79,1
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2DownLeft
+                    Name=DownLeft
+                    Pos=31,17,8
+                    Size=356,501
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2DownRight
+                    Name=DownRight
+                    Pos=402,17,8
+                    Size=356,501
+                }
+                Image ~{
+                    Name=FaceI
+                    Pos=31,197,1
+                    Size=99,110
+                }
+                Image ~{
+                    Name=CaptainI
+                    Pos=662,197,1
+                    Size=99,110
+                }
+                Image ~{
+                    Name=ImageFace
+                    Pos=47,82,5
+                    Size=99,98
+                }
+                Image ~{
+                    Name=ImageCaptain
+                    Pos=642,82,5
+                    Size=99,98
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit1
+                    Pos=224,120,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit2
+                    Pos=224,167,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit3
+                    Pos=224,214,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit4
+                    Pos=224,260,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit5
+                    Pos=224,307,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit6
+                    Pos=224,353,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit7
+                    Pos=224,400,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit8
+                    Pos=224,447,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit11
+                    Pos=479,120,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit12
+                    Pos=479,167,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit13
+                    Pos=479,214,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit14
+                    Pos=479,260,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit15
+                    Pos=479,307,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit16
+                    Pos=479,353,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit17
+                    Pos=479,400,3
+                    Size=13,13
+                }
+                Image ~{
+                    Image=GI,Bm.FormGoods2.2Illegal
+                    Name=TovPermit18
+                    Pos=479,447,3
+                    Size=13,13
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=NameFace
+                    Pos=29,340,6
+                    Size=96,38
+                    TextColor=88,229,255
+                    WordWrap=True
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=CharFace
+                    Pos=29,378,6
+                    Size=96,24
+                    TextColor=88,229,255
+                    WordWrap=True
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=NameCaptain
+                    Pos=665,340,6
+                    Size=96,38
+                    TextColor=88,229,255
+                    WordWrap=True
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=CharCaptain
+                    Pos=665,382,6
+                    Size=96,18
+                    TextColor=88,229,255
+                    WordWrap=True
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt0
+                    Pos=139,106,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt1
+                    Pos=139,151,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt2
+                    Pos=139,196,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt3
+                    Pos=139,242,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt4
+                    Pos=139,287,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt5
+                    Pos=139,332,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt6
+                    Pos=139,377,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt7
+                    Pos=139,422,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt10
+                    Pos=393,106,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt11
+                    Pos=393,151,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt12
+                    Pos=393,196,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt13
+                    Pos=393,242,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt14
+                    Pos=393,287,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt15
+                    Pos=393,332,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt16
+                    Pos=393,377,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovCnt17
+                    Pos=393,422,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice0
+                    Pos=293,106,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice1
+                    Pos=293,151,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice2
+                    Pos=293,196,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice3
+                    Pos=293,242,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice4
+                    Pos=293,287,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice5
+                    Pos=293,332,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice6
+                    Pos=293,377,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice7
+                    Pos=293,422,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice10
+                    Pos=547,106,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice11
+                    Pos=547,151,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice12
+                    Pos=547,196,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice13
+                    Pos=547,242,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice14
+                    Pos=547,287,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice15
+                    Pos=547,332,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice16
+                    Pos=547,377,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Label ~{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=TovPrice17
+                    Pos=547,422,6
+                    Size=100,20
+                    TextColor=0,0,0
+                }
+                Name=GoodsPanel
+                Panel ~{
+                    Name=TovImgCnt0
+                    Pos=223,96,6
+                    Size=207,45
+                }
+                Panel ~{
+                    Name=TovImgCnt1
+                    Pos=223,145,6
+                    Size=207,42
+                }
+                Panel ~{
+                    Name=TovImgCnt2
+                    Pos=230,190,6
+                    Size=207,40
+                }
+                Panel ~{
+                    Name=TovImgCnt3
+                    Pos=228,240,6
+                    Size=207,38
+                }
+                Panel ~{
+                    Name=TovImgCnt4
+                    Pos=224,286,6
+                    Size=207,41
+                }
+                Panel ~{
+                    Name=TovImgCnt5
+                    Pos=225,332,6
+                    Size=207,44
+                }
+                Panel ~{
+                    Name=TovImgCnt6
+                    Pos=226,377,6
+                    Size=207,46
+                }
+                Panel ~{
+                    Name=TovImgCnt7
+                    Pos=226,425,6
+                    Size=207,49
+                }
+                Panel ~{
+                    Name=TovImgCnt10
+                    Pos=478,96,6
+                    Size=207,45
+                }
+                Panel ~{
+                    Name=TovImgCnt11
+                    Pos=478,145,6
+                    Size=207,42
+                }
+                Panel ~{
+                    Name=TovImgCnt12
+                    Pos=484,190,6
+                    Size=207,40
+                }
+                Panel ~{
+                    Name=TovImgCnt13
+                    Pos=481,240,6
+                    Size=207,38
+                }
+                Panel ~{
+                    Name=TovImgCnt14
+                    Pos=478,286,6
+                    Size=207,41
+                }
+                Panel ~{
+                    Name=TovImgCnt15
+                    Pos=479,332,6
+                    Size=207,44
+                }
+                Panel ~{
+                    Name=TovImgCnt16
+                    Pos=480,377,6
+                    Size=207,46
+                }
+                Panel ~{
+                    Name=TovImgCnt17
+                    Pos=480,425,6
+                    Size=207,49
+                }
+                Panel ~{
+                    Name=TovCool1
+                    Pos=220,86,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool2
+                    Pos=220,133,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool3
+                    Pos=220,180,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool4
+                    Pos=220,226,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool5
+                    Pos=220,273,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool6
+                    Pos=220,319,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool7
+                    Pos=220,366,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool8
+                    Pos=220,413,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool11
+                    Pos=474,86,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool12
+                    Pos=474,133,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool13
+                    Pos=474,180,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool14
+                    Pos=474,226,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool15
+                    Pos=474,273,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool16
+                    Pos=474,319,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool17
+                    Pos=474,366,3
+                    Size=90,14
+                }
+                Panel ~{
+                    Name=TovCool18
+                    Pos=474,413,3
+                    Size=90,14
+                }
+                Pos=116,102,10
+                Size=789,537
+            }
+            Pos=0,0
+            ShrLight ~{
+                Name=BGShrLight
+                Pos=0,0,90
+                ShrLight=-2
+                Size=1024,768
+            }
+            Size=1024,768
+        }
+        Sound ^{
+            Group ~{
+                1=Sound.FormGoods0
+                1=Sound.FormGoods1
+                1=Sound.FormGoods2
+                1=Sound.FormGoods3
+                1=Sound.FormGoods4
+                NextTime=5000-10000
+            }
+        }
+    }
+    Hangar ^{
+        Border=0,0,1024,768
+        Panel ^{
+            GAI ^{
+                Active=False
+                Active=True
+                Frame=[50,0-39]
+                Image=Bm.FormHangar2.2Open
+                Name=AnimOpen
+                Pos=196,239,0
+                Size=624,323
+            }
+            GAI ^{
+                Active=False
+                Active=True
+                Frame=[80,0-23]
+                Image=Bm.FormHangar2.2Rnd
+                Name=AnimRnd
+                Pos=196,239,0
+                Size=624,323
+            }
+            GAI ^{
+                Active=True
+                FrameLoad=0
+                Image=Bm.FormHangar2.2Repair
+                Name=AnimRepair
+                Pos=445,384,-4
+                Size=48,48
+            }
+            GAI ^{
+                Active=True
+                FrameLoad=0
+                Image=Bm.FormHangar2.2Fuel
+                Name=AnimFuel
+                Pos=519,384,-4
+                Size=48,48
+            }
+            GraphBuf ^{
+                Name=Ship0
+                Pos=502,438,-3
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship1
+                Pos=381,334,-2
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship2
+                Pos=501,334,-2
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship3
+                Pos=621,334,-2
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship4
+                Pos=291,259,-1
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship5
+                Pos=396,259,-1
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship6
+                Pos=504,259,-1
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship7
+                Pos=606,259,-1
+                Size=164,164
+            }
+            GraphBuf ^{
+                Name=Ship8
+                Pos=706,259,-1
+                Size=164,164
+            }
+            Image ^{
+                Active=True
+                Name=BGCity2
+                Pos=0,0,11
+                Size=1024,768
+            }
+            Image ^{
+                Active=True
+                Name=BGCity
+                Pos=0,0,10
+                Size=1024,768
+            }
+            Image ^{
+                Active=False
+                Image=GI,Bm.FormHangar2.2OpenImage
+                Name=OpenImage
+                Pos=196,239,0
+                Size=624,323
+            }
+            Image ^{
+                Active=True
+                Auto=Pos,Size
+                Image=GI,Bm.FormHangar2.2Background
+                Name=HangarBackground
+                Pos=0,0,9
+                Size=1280,720
+            }
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                    Active=False
+                    MVUpdate=True
+                    MouseBlocking=True
+                    Name=PM_PanelMsg
+                    Pos=111,741,2
+                    Size=362,26
+                }
+                Panel ^{
+                    GraphButton ^{
+                        Help=Help.ButShip
+                        ImageDisable=GI,Bm.PanelMain2.2ShipH
+                        ImageDown=GI,Bm.PanelMain2.2ShipD
+                        ImageNormal=GI,Bm.PanelMain2.2ShipN
+                        ImageNormalA=GI,Bm.PanelMain2.2ShipA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Ship
+                        Pos=755,9,8
+                        Size=46,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Help=Help.ButGalaxy
+                        ImageDisable=GI,Bm.PanelMain2.2GalH
+                        ImageDown=GI,Bm.PanelMain2.2GalD
+                        ImageNormal=GI,Bm.PanelMain2.2GalN
+                        ImageNormalA=GI,Bm.PanelMain2.2GalA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Gal
+                        Pos=843,9,8
+                        Size=49,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Help=Help.ButRating
+                        ImageDisable=GI,Bm.PanelMain2.2RatingH
+                        ImageDown=GI,Bm.PanelMain2.2RatingD
+                        ImageNormal=GI,Bm.PanelMain2.2RatingN
+                        ImageNormalA=GI,Bm.PanelMain2.2RatingA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Quest
+                        Pos=799,9,8
+                        Size=47,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Auto=Pos,Size
+                        Help=Help.ButTurn
+                        ImageDisable=GI,Bm.PanelMain2.2TurnD
+                        ImageDown=GI,Bm.PanelMain2.2TurnD
+                        ImageNormal=GI,Bm.PanelMain2.2TurnN
+                        ImageNormalA=GI,Bm.PanelMain2.2TurnA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_EndTurn
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Active=True
+                        Auto=Pos,Size
+                        Help=Help.ButBreakMove
+                        ImageDisable=GI,Bm.PanelMain2.2StopD
+                        ImageDown=GI,Bm.PanelMain2.2StopD
+                        ImageNormal=GI,Bm.PanelMain2.2StopN
+                        ImageNormalA=GI,Bm.PanelMain2.2StopA
+                        Kind=Disable
+                        KindHit=Rect
+                        Name=PM_Break
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Auto=Pos,Size
+                        Help=Help.ButLogo
+                        ImageDisable=GI,Bm.PanelMain2.2MenuN
+                        ImageDown=GI,Bm.PanelMain2.2MenuD
+                        ImageNormal=GI,Bm.PanelMain2.2MenuN
+                        ImageNormalA=GI,Bm.PanelMain2.2MenuA
+                        Kind=Disable
+                        KindHit=Graph
+                        Name=PM_Logo
+                        PosZ=8
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Auto=Pos,Size
+                        Image=GI,Bm.PanelMain2.2BG
+                        Name=PM_ImageBG
+                        PosZ=9
+                    }
+                    Image ^{
+                        Image=GI,Bm.PanelMain2.2WarningSpace
+                        Name=PM_WarningSpace
+                        Pos=498,53,8
+                        Size=89,24
+                    }
+                    Image ^{
+                        Image=GI,Bm.PanelMain2.2WarningMoney
+                        Name=PM_WarningMoney
+                        Pos=622,53,8
+                        Size=98,24
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelMoney
+                        Name=PM_Money
+                        Pos=624,55,7
+                        Size=95,22
+                        TextColor=200,240,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Help=Help.LabelFreeSpace
+                        Name=PM_FreeSpace
+                        Pos=507,55,7
+                        Size=70,22
+                        TextColor=200,240,255
+                    }
+                    Label ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=CenterEx
+                        Font=Font.2SmallBold
+                        Name=PM_Help
+                        Pos=100,55,8
+                        Size=360,22
+                        TextColor=200,240,255
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.PanelMain2.2DateNext
+                            Name=PM_DateNextImage
+                            Pos=0,5,8
+                            Size=7,17
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_Date
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=CenterEx
+                            Font=Font.2SmallBold
+                            Help=Help.LabelDate
+                            Name=PM_DateNew
+                            Pos=0,0,8
+                            Size=130,22
+                            TextColor=200,240,255
+                        }
+                        Name=PM_PanelDate
+                        Pos=738,55,7
+                        Size=130,22
+                    }
+                    Pos=0,686,3
+                    Size=1024,82
+                }
+                Pos=0,0,-10
+                Size=1024,768
+                Window ^{
+                    Active=False
+                    Label ^{
+                        Active=True
+                        AlignX=Auto
+                        AlignY=Auto
+                        Font=Font.2Normal
+                        Name=PM_LabelMsg
+                        Pos=0,0,1
+                        Size=500,20
+                        TextColor=255,255,230
+                        WordWrap=True
+                    }
+                    Name=PM_WinMsg
+                    Pos=57,725,1
+                    Size=500,20
+                    Style=Style.Window.2Tips
+                }
+            }
+            Panel ^{
+                GraphButton ^{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Shop
+                    Pos=155,2,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGov
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Gov
+                    Pos=67,2,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Goods
+                    Pos=111,2,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Hangar
+                    Pos=243,2,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PP_Info
+                    Pos=199,2,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=0,0,10
+                    Size=297,43
+                }
+                Name=PanelPlanet
+                Pos=441,693,-10
+                Size=297,43
+            }
+            Panel ^{
+                GraphButton ^{
+                    Help=Help.ButCaptain
+                    ImageDown=GI,Bm.PanelMain2.2GovD
+                    ImageNormal=GI,Bm.PanelMain2.2GovN
+                    ImageNormalA=GI,Bm.PanelMain2.2GovA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Gov
+                    Pos=508,695,8
+                    Size=39,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButShop
+                    ImageDown=GI,Bm.PanelMain2.2ShopD
+                    ImageNormal=GI,Bm.PanelMain2.2ShopN
+                    ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Shop
+                    Pos=596,695,8
+                    Size=41,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButGoods
+                    ImageDown=GI,Bm.PanelMain2.2GoodsD
+                    ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                    ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Goods
+                    Pos=552,695,8
+                    Size=40,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButInfo
+                    ImageDown=GI,Bm.PanelMain2.2InfoD
+                    ImageNormal=GI,Bm.PanelMain2.2InfoN
+                    ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Info
+                    Pos=640,695,8
+                    Size=43,33
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButHangar
+                    ImageDown=GI,Bm.PanelMain2.2HangarD
+                    ImageNormal=GI,Bm.PanelMain2.2HangarN
+                    ImageNormalA=GI,Bm.PanelMain2.2HangarA
+                    Kind=Normal
+                    KindHit=Graph
+                    Name=PR_Hangar
+                    Pos=684,695,8
+                    Size=44,33
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.PanelMain2.2Planet
+                    Pos=441,693,10
+                    Size=297,43
+                }
+                Name=PanelRuins
+                Pos=0,0,-10
+                Size=1024,768
+            }
+            Panel ^{
+                GAI ^{
+                    FrameLoad=0
+                    Image=Bm.FormLoad2.LoadAnim
+                    Name=LoadAnim
+                    Pos=262,504,8
+                    Size=543,241
+                }
+                Image ^{
+                    Active=True
+                    KindX=Center
+                    KindY=Center
+                    Name=BGImage
+                    Pos=0,-229,10
+                    Size=1024,910
+                }
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.ShipPanel
+                    KindX=Center
+                    KindY=Center
+                    Name=ShipPanelImage
+                    Pos=0,0,9
+                    Size=1024,768
+                }
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormLoad2.LoadAnimText
+                    Name=LoadAnimText
+                    Pos=262,504,7
+                    Size=543,241
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Ranger
+                    Name=PLProgress
+                    Pos=497,644,6
+                    Size=75,17
+                    TextColor=255,255,255
+                    TextShadow=1
+                    TextShadowColor=0,0,0
+                }
+                MVUpdate=True
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarLeft
+                        Name=PLB1
+                        Pos=0,0
+                        Size=31,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB2
+                        Pos=20,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB3
+                        Pos=38,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB4
+                        Pos=56,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB5
+                        Pos=74,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB6
+                        Pos=92,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB7
+                        Pos=110,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB8
+                        Pos=128,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB9
+                        Pos=146,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB10
+                        Pos=164,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB11
+                        Pos=182,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB12
+                        Pos=200,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB13
+                        Pos=218,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB14
+                        Pos=236,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB15
+                        Pos=254,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarCenter
+                        Name=PLB16
+                        Pos=272,0
+                        Size=29,37
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormLoad2.2BarRight
+                        Name=PLB17
+                        Pos=290,0
+                        Size=31,37
+                    }
+                    Name=PLBar
+                    Pos=351,720,8
+                    Size=321,37
+                }
+                Pos=0,0,-1000
+                Size=1024,768
+            }
+            Panel ^{
+                GAI ^{
+                    KindX=Center
+                    KindY=Center
+                    Name=FaceA
+                    PBuf=True
+                    Pos=60,33,0
+                    Size=99,110
+                    TransColor=255,0,255
+                }
+                GAI ^{
+                    KindX=Center
+                    KindY=Center
+                    Name=CaptainA
+                    PBuf=True
+                    Pos=470,33,-2
+                    Size=99,110
+                    TransColor=255,0,255
+                }
+                GraphBuf ^{
+                    Name=FaceGB
+                    Pos=60,33,-1
+                    Size=97,110
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Top
+                    Pos=0,0,10
+                    Size=625,166
+                }
+                Image ^{
+                    Name=FaceI
+                    Pos=60,33,1
+                    Size=99,110
+                }
+                Image ^{
+                    Name=CaptainI
+                    Pos=470,33,-1
+                    Size=99,110
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Light1
+                    Name=Light1
+                    Pos=166,66,-3
+                    Size=33,18
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Light2
+                    Name=Light2
+                    Pos=166,81,-3
+                    Size=33,18
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Light3
+                    Name=Light3
+                    Pos=166,96,-3
+                    Size=33,18
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Light4
+                    Name=Light4
+                    Pos=167,124,-3
+                    Size=32,19
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Pos=203,33,-3
+                    Size=171,22
+                    Style=Style.Label.2Normal
+                    Text=FormHangar.TestSystem
+                    TextColor=0,0,0
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Name=Text1
+                    Pos=203,69,-3
+                    Size=232,15
+                    Style=Style.Label.2Normal
+                    TextColor=0,0,0
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Name=Text2
+                    Pos=203,85,-3
+                    Size=232,15
+                    Style=Style.Label.2Normal
+                    TextColor=0,0,0
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Name=Text3
+                    Pos=203,101,-3
+                    Size=232,15
+                    Style=Style.Label.2Normal
+                    TextColor=0,0,0
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Name=Text4
+                    Pos=203,126,-3
+                    Size=232,15
+                    Style=Style.Label.2Normal
+                    TextColor=0,0,0
+                    WordWrap=False
+                }
+                Name=PanelUp
+                Pos=196,50,1
+                Size=625,166
+            }
+            Panel ^{
+                GraphButton ^{
+                    Help=Help.ButRepair
+                    ImageDisable=GI,Bm.FormHangar2.2RepairH
+                    ImageDown=GI,Bm.FormHangar2.2RepairD
+                    ImageNormal=GI,Bm.FormHangar2.2RepairN
+                    ImageNormalA=GI,Bm.FormHangar2.2RepairA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=ButRepair
+                    Pos=18,11,8
+                    Size=63,37
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButRefuel
+                    ImageDisable=GI,Bm.FormHangar2.2FuelH
+                    ImageDown=GI,Bm.FormHangar2.2FuelD
+                    ImageNormal=GI,Bm.FormHangar2.2FuelN
+                    ImageNormalA=GI,Bm.FormHangar2.2FuelA
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=ButRefuel
+                    Pos=78,11,8
+                    Size=63,37
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Help=Help.ButTakeoff
+                    ImageDisable=GI,Bm.FormHangar2.2TakeOffH
+                    ImageDown=GI,Bm.FormHangar2.2TakeOffD
+                    ImageNormal=GI,Bm.FormHangar2.2TakeOffN
+                    ImageNormalA=GI,Bm.FormHangar2.2TakeOffA
+                    Kind=Disable
+                    KindHit=Graph
+                    Name=ButTakeOff
+                    Pos=138,11,8
+                    Size=63,37
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    ImageDown=GI,Bm.FormHangar2.2CloseD
+                    ImageNormal=GI,Bm.FormHangar2.2CloseN
+                    ImageNormalA=GI,Bm.FormHangar2.2CloseA
+                    Kind=Normal
+                    KindHit=Rect
+                    Name=ButClose
+                    Pos=220,26,8
+                    Size=61,35
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.FormHangar2.2Bottom
+                    Pos=0,0,10
+                    Size=302,63
+                }
+                Name=PanelDown
+                Pos=357,578,-10
+                Size=302,63
+            }
+            Pos=0,0
+            Size=1024,768
+            Window ^{
+                Active=False
+                GraphBuf ^{
+                    Name=InfoShipImage2
+                    Pos=12,10,8
+                    Size=43,43
+                }
+                Image ^{
+                    Name=InfoShipEmRace
+                    Pos=211,128,8
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=InfoShipName
+                    Pos=60,10,8
+                    Size=165,43
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISType
+                    Pos=0,65,8
+                    Size=125,15
+                    Text=FormInfo.ISType
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISSpeed
+                    Pos=0,80,8
+                    Size=125,15
+                    Text=FormInfo.ISSpeed
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISSize
+                    Pos=0,95,8
+                    Size=125,15
+                    Text=FormInfo.ISSize
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISDef
+                    Pos=0,110,8
+                    Size=125,15
+                    Text=FormInfo.ISDef
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISDamage
+                    Pos=0,125,8
+                    Size=125,15
+                    Text=FormInfo.ISDamage
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISRel
+                    Pos=0,140,8
+                    Size=125,15
+                    Text=FormInfo.ISRel
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Right
+                    AlignY=CenterEx
+                    Font=Font.2Small
+                    Name=ISWin
+                    Pos=0,155,8
+                    Size=125,15
+                    Text=FormInfo.ISWin
+                    TextColor=140,140,140
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipType
+                    Pos=125,65,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipSpeed
+                    Pos=125,80,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipSize
+                    Pos=125,95,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipDef
+                    Pos=125,110,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipDamage
+                    Pos=125,125,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipRel
+                    Pos=125,140,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                Label ^{
+                    AlignX=Left
+                    AlignY=CenterEx
+                    Font=Font.2Normal
+                    Name=InfoShipWin
+                    Pos=125,155,8
+                    Size=130,15
+                    TextColor=255,255,255
+                    WordWrap=False
+                }
+                MVUpdate=True
+                MouseBlocking=False
+                Name=InfoShip
+                Panel ^{
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarLine
+                            Name=InfoShipDurable
+                            Pos=0,0
+                            Size=213,4
+                        }
+                        Pos=16,5,2
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarBack
+                            Name=InfoShipDurableBack
+                            Pos=0,0
+                            Size=210,4
+                        }
+                        Pos=16,5,3
+                        Size=51,4
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopLeft
+                            Name=InfoShipDurableLeft
+                            Pos=0,0
+                            Size=17,14
+                        }
+                        Pos=3,0,1
+                        Size=17,14
+                    }
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.FormNote.2BarTopRight
+                            Name=InfoShipDurableRight
+                            Pos=0,0
+                            Size=227,14
+                        }
+                        Pos=50,0,1
+                        Size=84,14
+                    }
+                    Pos=60,2,11
+                    Size=84,14
+                }
+                Pos=10,10,InfoPanel
+                Size=260,174
+                Style=Style.Window.2Simple
+            }
+        }
+        Sound ^{
+            Group ^{
+                1=Sound.FormHangar3
+                2=Sound.FormHangar4
+                3=Sound.FormHangar0
+                3=Sound.FormHangar1
+                3=Sound.FormHangar2
+                3=Sound.FormHangar5
+                3=Sound.FormHangar6
+                3=Sound.FormHangar7
+                3=Sound.FormHangar8
+                3=Sound.FormHangar9
+                3=Sound.FormHangar10
+                NextTime=4000-6000
+            }
+            Group ^{
+                1=Sound.FormHangar3
+                2=Sound.FormHangar4
+                3=Sound.FormHangar0
+                3=Sound.FormHangar1
+                3=Sound.FormHangar2
+                3=Sound.FormHangar5
+                3=Sound.FormHangar6
+                3=Sound.FormHangar7
+                3=Sound.FormHangar8
+                3=Sound.FormHangar9
+                3=Sound.FormHangar10
+                NextTime=6000-10000
+            }
+        }
+    }
+}

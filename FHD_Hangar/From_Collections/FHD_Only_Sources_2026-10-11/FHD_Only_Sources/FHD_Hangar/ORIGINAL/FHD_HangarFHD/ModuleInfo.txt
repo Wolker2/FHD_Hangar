@@ -1,0 +1,20 @@
+Name=FHD_HangarFHD
+Section=FHD_MODS
+Author=Prolog_D;
+Conflict=FHD_Hangar,FHD_Hangar4K,FHD_Hangar2K,FHD_HangarHD
+Dependence=
+Priority=1
+Languages=Rus,Eng
+SmallDescription=<color=0,132,15>Мод добавляет отдельные фоны ангара, базара и магазина оборудования</color>
+SmallDescription=<color=255,215,0>ver.2</color>
+SmallDescription=Мод добавляет фоны ангара, базара и магазина оборудования вместо стандартного фона планеты
+SmallDescription=(Мод можно <color=0,150,15>подключать</color>/<color=150,0,15>отключать</color> в любое время игры)
+FullDescription=Мод добавляет отдельные фоны ангара, базара и магазина оборудования вместо стандартного фона планеты
+FullDescription=<color=0,132,15>(Легален)</color>
+Languages=Eng,Rus
+SmallDescription=<color=0,132,15>The mod adds separate backgrounds for the hangar, bazaar and equipment shop
+SmallDescription=<color=255,215,0>ver.2
+SmallDescription=The mod adds hangar, bazaar and equipment shop backgrounds instead of the standard planet background
+SmallDescription=(The mod can be <color=0,150,15>enabled/<color=150,0,15>disabled at any time during the game)
+FullDescription=The mod adds separate hangar, bazaar and equipment shop backgrounds instead of the standard planet background
+FullDescription=<color=0,132,15>(Legal)

@@ -1,0 +1,7 @@
+Bm ^{
+    FormHangar2 ^{
+        2Background=Mods\FHD_MODS\FHD_HangarHD\DATA\FormHangar2\2Background.gi
+        2EquipmentBackground=Mods\FHD_MODS\FHD_HangarHD\DATA\FormHangar2\2EquipmentBackground.gi
+        2MarketBackground=Mods\FHD_MODS\FHD_HangarHD\DATA\FormHangar2\2MarketBackground.gi
+    }
+}
