@@ -1,0 +1,465 @@
+{
+  "format": "srhd-hangar-variants-v1",
+  "variants": [
+    {
+      "name": "FHD_Hangar2K",
+      "background_ui_size": [
+        2560,
+        1440
+      ],
+      "module_encoding": "utf-16le-bom",
+      "graphics": [
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar2K/DATA/FormHangar2/2Background.png",
+          "runtime_path": "DATA/FormHangar2/2Background.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar2K/DATA/FormHangar2/2EquipmentBackground.png",
+          "runtime_path": "DATA/FormHangar2/2EquipmentBackground.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            2752,
+            1536
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar2K/DATA/FormHangar2/2MarketBackground.png",
+          "runtime_path": "DATA/FormHangar2/2MarketBackground.gi"
+        }
+      ]
+    },
+    {
+      "name": "FHD_Hangar4K",
+      "background_ui_size": [
+        3840,
+        2160
+      ],
+      "module_encoding": "utf-16le-bom",
+      "graphics": [
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar4K/DATA/FormHangar2/2Background.png",
+          "runtime_path": "DATA/FormHangar2/2Background.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar4K/DATA/FormHangar2/2EquipmentBackground.png",
+          "runtime_path": "DATA/FormHangar2/2EquipmentBackground.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            3840,
+            2160
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_Hangar4K/DATA/FormHangar2/2MarketBackground.png",
+          "runtime_path": "DATA/FormHangar2/2MarketBackground.gi"
+        }
+      ]
+    },
+    {
+      "name": "FHD_HangarFHD",
+      "background_ui_size": [
+        1920,
+        1080
+      ],
+      "module_encoding": "cp1251",
+      "graphics": [
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarFHD/DATA/FormHangar2/2Background.png",
+          "runtime_path": "DATA/FormHangar2/2Background.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "masks": [
+            16711680,
+            65280,
+            255,
+            4278190080
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "argb8888",
+          "layer_bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarFHD/DATA/FormHangar2/2EquipmentBackground.png",
+          "runtime_path": "DATA/FormHangar2/2EquipmentBackground.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarFHD/DATA/FormHangar2/2MarketBackground.png",
+          "runtime_path": "DATA/FormHangar2/2MarketBackground.gi"
+        }
+      ]
+    },
+    {
+      "name": "FHD_HangarHD",
+      "background_ui_size": [
+        1280,
+        720
+      ],
+      "module_encoding": "cp1251",
+      "graphics": [
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarHD/DATA/FormHangar2/2Background.png",
+          "runtime_path": "DATA/FormHangar2/2Background.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarHD/DATA/FormHangar2/2EquipmentBackground.png",
+          "runtime_path": "DATA/FormHangar2/2EquipmentBackground.gi"
+        },
+        {
+          "format": "srhd-gi0-png-v1",
+          "version": 1,
+          "bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "masks": [
+            63488,
+            2016,
+            31,
+            0
+          ],
+          "reserved": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "pixel_format": "rgb565",
+          "layer_bounds": [
+            0,
+            0,
+            1280,
+            720
+          ],
+          "layer_reserved": [
+            0,
+            0
+          ],
+          "png": "FHD_HangarHD/DATA/FormHangar2/2MarketBackground.png",
+          "runtime_path": "DATA/FormHangar2/2MarketBackground.gi"
+        }
+      ]
+    }
+  ]
+}

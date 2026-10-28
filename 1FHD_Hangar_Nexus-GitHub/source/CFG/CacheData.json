@@ -1,0 +1,39 @@
+{
+  "format": "cachedata",
+  "seed": 610800471,
+  "root": {
+    "entries": [
+      {
+        "kind": "block",
+        "name": "Bm",
+        "value": {
+          "entries": [
+            {
+              "kind": "block",
+              "name": "FormHangar2",
+              "value": {
+                "entries": [
+                  {
+                    "kind": "parameter",
+                    "name": "2Background",
+                    "value": "Mods\\FHD_MODS\\{variant}\\DATA\\FormHangar2\\2Background.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "2EquipmentBackground",
+                    "value": "Mods\\FHD_MODS\\{variant}\\DATA\\FormHangar2\\2EquipmentBackground.gi"
+                  },
+                  {
+                    "kind": "parameter",
+                    "name": "2MarketBackground",
+                    "value": "Mods\\FHD_MODS\\{variant}\\DATA\\FormHangar2\\2MarketBackground.gi"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
